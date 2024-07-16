@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 
 import { createCustomElement } from '@angular/elements';
 
+import { WelcomeModule } from './core/components/welcome/welcome.module';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, WelcomeModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

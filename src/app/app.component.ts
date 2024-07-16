@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +10,7 @@ export class AppComponent {
   title = 'mf2';
   itemList: string[] = [];
 
-  constructor() {
-    this.generateItemList();
-  }
-
-  generateItemList() {
-    for (let i = 1; i <= 10; i++) {
-      this.itemList.push(`Item ${i}`);
-    }
-  }
-
-  userTrackBy(index: number) {
-    return index;
+  constructor(private router: Router) {
+    this.router.initialNavigation();    
   }
 }

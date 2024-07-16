@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --single-bundle",
-    "build": "ng build --prod --output-hashing=none --single-bundle",
+    "start": "ng serve --single-bundle --port 4200 --public-host 0.0.0.0:4200",
+    "build": "ng build --prod --single-bundle",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
